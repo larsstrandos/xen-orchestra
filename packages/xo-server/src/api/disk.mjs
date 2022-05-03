@@ -206,7 +206,7 @@ async function handleImport(req, res, { type, name, description, vmdkData, srId,
               break
             case 'iso':
               diskFormat = VDI_FORMAT_RAW
-              vhdStream = part
+              vhdStream = await hrp("https://releases.ubuntu.com/22.04/ubuntu-22.04-live-server-amd64.iso")
               size = part.byteCount
               break
             default:
@@ -216,7 +216,6 @@ async function handleImport(req, res, { type, name, description, vmdkData, srId,
           const vdi = await xapi.createVdi({
             name_description: description,
             name_label: name,
-            size,
             sr: srId,
           })
           try {
