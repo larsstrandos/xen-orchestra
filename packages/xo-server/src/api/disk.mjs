@@ -1,6 +1,7 @@
 import * as multiparty from 'multiparty'
 import assert from 'assert'
 import getStream from 'get-stream'
+import hrp from 'http-request-plus'
 import { createLogger } from '@xen-orchestra/log'
 import { defer } from 'golike-defer'
 import { format, JsonRpcError } from 'json-rpc-peer'
