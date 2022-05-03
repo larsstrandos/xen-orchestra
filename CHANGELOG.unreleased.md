@@ -11,6 +11,8 @@
 
 > Users must be able to say: “I had this issue, happy to know it's fixed”
 
+- [Remote] show more details when remote testing fails (PR [#6216](https://github.com/vatesfr/xen-orchestra/pull/6216))
+
 ### Packages to release
 
 > Packages will be released in the order they are here, therefore, they should
@@ -28,5 +30,6 @@
 >
 > In case of conflict, the highest (lowest in previous list) `$version` wins.
 
+- @xen-orchestra/fs
 - @xen-orchestra/mixins patch
 - xo-server patch
